@@ -28,22 +28,22 @@
 
         <div class="col-12 input">
           <label for="amount-requested">Amount Requested (£)</label>
-          <input type="text" name="amount-requested" id="amount-requested" placeholder="0" value="10000"/>
+          <input type="text" name="amount-requested" id="amount-requested" placeholder="0" value="10000" required/>
         </div>
 
         <div class="col-12 input">
           <label for="duration">Duration (months)</label>
-          <input type="text" name="duration" id="duration" placeholder="0" value="4"/>
+          <input type="text" name="duration" id="duration" placeholder="0" value="4" required/>
         </div>
 
         <div class="col-12 input">
           <label for="revolving-credit-interest-rate"><b>Revolving Credit Facility</b> Interest Rate (%)</label>
-          <input type="text" name="revolving-credit-interest-rate" id="revolving-credit-interest-rate" placeholder="0" value="3"/>
+          <input type="text" name="revolving-credit-interest-rate" id="revolving-credit-interest-rate" placeholder="0" value="3" required/>
         </div>
 
         <div class="col-12 input">
           <label for="business-loan-interest-rate"><b>Business Loan</b> Interest Rate (%)</label>
-          <input type="text" name="business-loan-interest-rate" id="business-loan-interest-rate" placeholder="0" value="3"/>
+          <input type="text" name="business-loan-interest-rate" id="business-loan-interest-rate" placeholder="0" value="3" required/>
         </div>
 
         <div class="col-12">
@@ -63,7 +63,7 @@
       <div class="col-12 col-md-6">
 
         <h2>Revolving Credit Facility</h2>
-        <p><i>Interest Rate: 3%</i></p>
+        <p><i>Interest Rate: <span id="entered-rcp-interest">3</span>%</i></p>
 
         <table id="rcpLoanTable" class="table table-sm">
           <thead>
@@ -83,7 +83,7 @@
       <div class="col-12 col-md-6">
 
         <h2>Business Loan</h2>
-        <p><i>Interest Rate: 3%</i></p>
+        <p><i>Interest Rate: <span id="entered-bl-interest">3</span>%</i></p>
 
         <table id="businessLoanTable" class="table table-sm">
           <thead>

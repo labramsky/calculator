@@ -41,6 +41,10 @@ function removeTableRows(table) {
 function calculate() {
     event.preventDefault();
 
+    // Set percentages on calculators
+    document.getElementById("entered-rcp-interest").innerHTML = document.getElementById("revolving-credit-interest-rate").value
+    document.getElementById("entered-bl-interest").innerHTML = document.getElementById("business-loan-interest-rate").value
+
     // User generated numbers
     var totalRequestedLoan = Number(document.getElementById("amount-requested").value)
     var duration = Number(document.getElementById("duration").value) // number of months
