@@ -18,32 +18,32 @@
 
     <div class="row header">
       <h1 class="col-12">Your Loan</h1>
-      <p class="col-12">Please enter the loan's requested amount, duration, and interest rates to calculate the Revolving Credit Facility and Business Loan repayment.</p>
+      <p class="col-12">Please enter your requested loan amount, duration, and interest rates to calculate the Revolving Credit Facility and Business Loan repayment.</p>
     </div>
 
     <!-- Loan Form -->
-    <form>
+    <form id="loan-form" onsubmit="return calculate()">
 
       <div class="row form-inputs">
 
         <div class="col-12 input">
           <label for="amount-requested">Amount Requested (£)</label>
-          <input type="text" name="amount-requested" placeholder="0" value="10000"/>
+          <input type="text" name="amount-requested" id="amount-requested" placeholder="0" value="10000"/>
         </div>
 
         <div class="col-12 input">
           <label for="duration">Duration (months)</label>
-          <input type="text" name="duration" placeholder="0" value="4"/>
+          <input type="text" name="duration" id="duration" placeholder="0" value="4"/>
         </div>
 
         <div class="col-12 input">
           <label for="revolving-credit-interest-rate"><b>Revolving Credit Facility</b> Interest Rate (%)</label>
-          <input type="text" name="revolving-credit-interest-rate" placeholder="0" value="3"/>
+          <input type="text" name="revolving-credit-interest-rate" id="revolving-credit-interest-rate" placeholder="0" value="3"/>
         </div>
 
         <div class="col-12 input">
           <label for="business-loan-interest-rate"><b>Business Loan</b> Interest Rate (%)</label>
-          <input type="text" name="business-loan-interest-rate" placeholder="0" value="3"/>
+          <input type="text" name="business-loan-interest-rate" id="business-loan-interest-rate" placeholder="0" value="3"/>
         </div>
 
         <div class="col-12">
