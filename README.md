@@ -43,7 +43,7 @@ to this website. As it increased in complexity, I would then add integration and
 <h3>Accessibility</h3>
 
 For the purpose of this challenge, I implemented accessiblility best practices in ensuring that the 
-elements I chose were acurate to their meaning and generally made sense (ex: Headings go from h1 > h2 > etc). 
+elements I chose were accurate to their meaning and generally made sense (ex: Headings go from h1 > h2 > etc). 
 If I had more time, I'd do thourough accessibility checks with a screen reader and colour contrast tool. 
 If there were images, I'd add alt tags, and  I'd ensure every section had a role and aria-label. 
 
@@ -58,5 +58,4 @@ my current method of generally adding a float.
 <h3>Formatting & Responsive Design</h3>
 
 I'd like to improve the date formatting and logic. Currently I simply add the months based on the user's desired duration,
-but there's currently nothing useful in place if they choose 13 months, so instead I'd like to base the logic on the current date. 
-It would also make me very happy to have had time to improve the responsiveness of the form inputs, so they would look great on mobile.
+but there's currently nothing useful in place if they choose 13 months, so instead I'd like to base the logic on the current date. It would also make me very happy to have had time to improve the responsiveness of the form inputs, so they would look great on mobile.
