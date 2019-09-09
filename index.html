@@ -15,8 +15,76 @@
 </head>
 <body>
 
-  <h1>Hello world, this is a calculator</h1>
+  <h1>Your Loan</h1>
+  <p>Please enter the loan's requested amount, duration, and interest rate for both the Revolving Credit Facility and Business Loan.</p>
 
+  <!-- Loan Form -->
+  <form>
+
+    <div>
+      <label for="amount-requested">Amount Requested (£)</label>
+      <input type="text" name="amount-requested" placeholder="Enter requested amount (ex: 10000)"/>
+    </div>
+
+    <div>
+      <label for="duration">Duration (months)</label>
+      <input type="text" name="duration" placeholder="Enter number of months (ex: 4)"/>
+    </div>
+
+
+    <!-- Revolving Credit Facility Calculator -->
+    <div>
+
+      <h2>Revolving Credit Facility</h2>
+
+      <div>
+        <label for="revolving-credit-interest-rate">Interest Rate (%)</label>
+        <input type="text" name="revolving-credit-interest-rate" placeholder="3"/>
+      </div>
+
+      <table id="rcpLoanTable" class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Repayment Date</th>
+            <th scope="col">Principal</th>
+            <th scope="col">Interest</th>
+            <th scope="col">Total Repayment</th>
+          </tr>
+        </thead>
+      </table>
+
+    </div>
+    <!-- /Revolving Credit Facility Calculator -->
+
+
+    <!-- Business Loan Calculator -->
+    <div>
+
+      <h2>Business Loan</h2>
+
+      <div>
+        <label for="business-loan-interest-rate">Interest Rate (%)</label>
+        <input type="text" name="business-loan-interest-rate" placeholder="3"/>
+      </div>
+
+      <table id="businessLoanTable" class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Repayment Date</th>
+            <th scope="col">Principal</th>
+            <th scope="col">Interest</th>
+            <th scope="col">Total Repayment</th>
+          </tr>
+        </thead>
+      </table>
+
+
+    </div>
+    <!-- /Business Loan Calculator -->
+
+
+  </form>
+  <!-- /Loan Form -->
 
 
 
